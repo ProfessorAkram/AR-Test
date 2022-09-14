@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51943dc809fab4e90addb865294fff37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerToListen: caterpillar
+  markerToListen: Nutty
   child: {fileID: 1073563558}
   updateSpeed: 20
   positionThreshold: 0
@@ -484,12 +484,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c26b75ea98c8f4effbc4028205f573af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c26b75ea98c8f4effbc4028205f573af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.974
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c26b75ea98c8f4effbc4028205f573af,
         type: 3}
@@ -685,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1073563559
 Transform:
   m_ObjectHideFlags: 0
