@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Demos/Marker/AR Marker Simple Button/ARMarker Simple Button.unity
     guid: 248dda6d9653f4ec5bb7484b9e0875af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Demos/Marker/AR Marker Rotate and Scale/ARMarker Rotate and Scale.unity
     guid: 065497cde0b9c46d99aaf798c5d58e69
   - enabled: 0
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Demos/Markerless/AR Markerless ImageTracking/SingleImageTracking/SingleImageTracking.unity
     guid: fcc8bdde1f18fc1409af4c834043f32e
+  - enabled: 1
+    path: Assets/_MySamples/my_ARMarkerDemo.unity
+    guid: 4f7c16152aca41648a2f6e20c2fb8cc1
   m_configObjects: {}
