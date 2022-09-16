@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51943dc809fab4e90addb865294fff37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerToListen: caterpillar
+  markerToListen: pattern-pop
   child: {fileID: 1073563558}
   updateSpeed: 20
   positionThreshold: 0
