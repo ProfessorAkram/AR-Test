@@ -8,13 +8,13 @@ using UnityEngine;
 
 namespace ARWT.Core{
     public class PostBuildActions{
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
 
         const string markerPlaceholder = "--MARKERS--";
         const string buildPlaceholder = "%UNITY_WEBGL_BUILD_URL%";
-        static string projectMarkers = "Assets/Resources/Markers";
+        static string projectMarkers = "Assets/Resources/NFTS";
         static string projectMarkersImages = "Assets/Resources/Images";
-        static string markersPath = "data/markers";
+        static string markersPath = "data/nfts";
         static string markersImagesPath = "data/markersImages";
         static string index = "index.html";
         static string appJS = "js/app.js";
@@ -63,11 +63,12 @@ namespace ARWT.Core{
             Directory.CreateDirectory(completeMarkersPath);
 
             foreach (var file in fileInfo){
-                if(file.Extension == ".patt"){
+                if(file.Extension == ".fset" || file.Extension == ".fset3" || file.Extension == ".iset")
+                {
                     FileUtil.CopyFileOrDirectory(file.FullName, Path.Combine(completeMarkersPath, file.Name));
-                    var markerName = file.Name.Replace(file.Extension, "");
+                    var markerName = file.Name; //.Replace(file.Extension, "");
                     var markerUrl = Path.Combine(markersPath, file.Name);
-                    html += $"\t\t\t<a-marker type=\"pattern\" url=\"{markerUrl}\" markercontroller=\"name : {markerName}\"></a-marker>\n";
+                    html += $"\t\t\t<a-nft type=\"nft\" url=\"{markerUrl}\" markercontroller=\"name : {markerName}\" smooth=\"true\" smoothCount=\"10\" smoothTolerance=\".01\" smoothThreshold=\"5\" ></a-nft>\n";
                 }
             }
 
@@ -103,6 +104,6 @@ namespace ARWT.Core{
             }
         }
 
-        #endif
+#endif
     }
 }
